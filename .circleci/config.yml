@@ -15,7 +15,6 @@ jobs:
       - browser-tools/install-browser-tools
 
       - run: npm install
-      - run: -d --name selenoid-ui -p 4444:4444
 
       # run tests!
       - run: npm test
