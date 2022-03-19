@@ -3,8 +3,8 @@ module.exports = {
     page_objects_path: [ "pages" ],
     test_settings: {
       default: {
-        selenium_port: 35753,
-        selenium_host: "localhost",
+        selenium_port: 4444,
+        selenium_host: "https://localhost:4444/grid/console",
         silent: true,
         screenshots: {
           enabled: false,
@@ -25,7 +25,7 @@ module.exports = {
       selenium: {
         selenium: {
           start_process: true,
-          port: 35753,
+          port: 4444,
           server_path: require("selenium-server").path,
           cli_args: {
             "webdriver.chrome.driver": require("chromedriver").path,
