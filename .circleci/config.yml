@@ -6,8 +6,8 @@ jobs:
     docker:
       - image: 'cimg/node:15.0.1-browsers'
         auth:
-          username: davidh80
-          password: Docker$123!
+          username: $DOCKERHUB_USER
+          password: $DOCKERHUB_PASSWORD
     working_directory: ~/repo
 
     steps:
