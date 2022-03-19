@@ -10,13 +10,13 @@
 
   
     <system-err>
-        Error: An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;.
+        Error: An error occurred while creating a new Selenium Server session: [Error] ENOTFOUND getaddrinfo ENOTFOUND https
     </system-err>
   
 
     
-    <error message="An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;."><![CDATA[
-      Error: An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;.
+    <error message="An error occurred while creating a new Selenium Server session: [Error] ENOTFOUND getaddrinfo ENOTFOUND https"><![CDATA[
+      Error: An error occurred while creating a new Selenium Server session: [Error] ENOTFOUND getaddrinfo ENOTFOUND https
     at Timeout._onTimeout (/Users/davidhoffman/Documents/Mentorship2022_Practice_CI/node_modules/nightwatch/lib/transport/selenium-webdriver/httpclient.js:90:27)
     at listOnTimeout (node:internal/timers:557:17)
     at processTimers (node:internal/timers:500:7)

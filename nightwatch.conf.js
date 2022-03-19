@@ -4,7 +4,7 @@ module.exports = {
     test_settings: {
       default: {
         selenium_port: 4444,
-        selenium_host: "https://localhost:4444/grid/console",
+        //selenium_host: "localhost",
         silent: true,
         screenshots: {
           enabled: false,
