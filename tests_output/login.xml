@@ -10,26 +10,16 @@
 
   
     <system-err>
-        SessionNotCreatedError: An error occurred while creating a new Selenium Server session: [SessionNotCreatedError] Unable to create new service: GeckoDriverService
- Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;
- System info: host: &#39;Dialexas-MBP-6.attlocal.net&#39;, ip: &#39;2600:1700:4f8:fb10:0:0:0:38%en0&#39;, os.name: &#39;Mac OS X&#39;, os.arch: &#39;x86_64&#39;, os.version: &#39;12.2.1&#39;, java.version: &#39;17.0.1&#39;
- Driver info: driver.version: unknown
+        Error: An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;.
     </system-err>
   
 
     
-    <error message="An error occurred while creating a new Selenium Server session: [SessionNotCreatedError] Unable to create new service: GeckoDriverService
-Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;
-System info: host: &#39;Dialexas-MBP-6.attlocal.net&#39;, ip: &#39;2600:1700:4f8:fb10:0:0:0:38%en0&#39;, os.name: &#39;Mac OS X&#39;, os.arch: &#39;x86_64&#39;, os.version: &#39;12.2.1&#39;, java.version: &#39;17.0.1&#39;
-Driver info: driver.version: unknown"><![CDATA[
-      SessionNotCreatedError: An error occurred while creating a new Selenium Server session: [SessionNotCreatedError] Unable to create new service: GeckoDriverService
-Build info: version: &#39;3.141.59&#39;, revision: &#39;e82be7d358&#39;, time: &#39;2018-11-14T08:25:53&#39;
-System info: host: &#39;Dialexas-MBP-6.attlocal.net&#39;, ip: &#39;2600:1700:4f8:fb10:0:0:0:38%en0&#39;, os.name: &#39;Mac OS X&#39;, os.arch: &#39;x86_64&#39;, os.version: &#39;12.2.1&#39;, java.version: &#39;17.0.1&#39;
-Driver info: driver.version: unknown
-    at Object.checkLegacyResponse (/Users/davidhoffman/Documents/Mentorship2022_Practice_CI/node_modules/selenium-webdriver/lib/error.js:575:15)
-    at parseHttpResponse (/Users/davidhoffman/Documents/Mentorship2022_Practice_CI/node_modules/selenium-webdriver/lib/http.js:639:13)
-    at Executor.execute (/Users/davidhoffman/Documents/Mentorship2022_Practice_CI/node_modules/selenium-webdriver/lib/http.js:573:28)
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    <error message="An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;."><![CDATA[
+      Error: An error occurred while creating a new Selenium Server session: Connection refused to 127.0.0.1:80. If the Webdriver/Selenium service is managed by Nightwatch, check if &#34;start_process&#34; is set to &#34;true&#34;.
+    at Timeout._onTimeout (/Users/davidhoffman/Documents/Mentorship2022_Practice_CI/node_modules/nightwatch/lib/transport/selenium-webdriver/httpclient.js:90:27)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
       ]]></error>  
 
   

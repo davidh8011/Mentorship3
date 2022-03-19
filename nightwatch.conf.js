@@ -3,7 +3,7 @@ module.exports = {
     page_objects_path: [ "pages" ],
     test_settings: {
       default: {
-       // selenium_port: 4444,
+        selenium_port: 35753,
         selenium_host: "localhost",
         silent: true,
         screenshots: {
@@ -25,7 +25,7 @@ module.exports = {
       selenium: {
         selenium: {
           start_process: true,
-          //port: 4444,
+          port: 35753,
           server_path: require("selenium-server").path,
           cli_args: {
             "webdriver.chrome.driver": require("chromedriver").path,
