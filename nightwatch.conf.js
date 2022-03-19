@@ -3,7 +3,7 @@ module.exports = {
     page_objects_path: [ "pages" ],
     test_settings: {
       default: {
-        selenium_port: 4444,
+        selenium_port: 4445,
         selenium_host: "localhost",
         silent: true,
         screenshots: {
