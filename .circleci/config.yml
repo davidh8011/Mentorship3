@@ -6,9 +6,9 @@ jobs:
     docker:
       - image: 'cimg/node:15.0.1-browsers'
         auth:
-          username: $DOCKERHUB_USER
-          password: $DOCKERHUB_PASSWORD
-    working_directory: ~/Mentorship3
+          username: davidh80
+          password: Perry3411$
+    working_directory: ~/repo
 
     steps:
       - checkout
@@ -17,5 +17,5 @@ jobs:
       - run: npm install
 
       # run tests!
-      - run: npm test
+      #- run: npm test
       - run: npm run e2e-test
