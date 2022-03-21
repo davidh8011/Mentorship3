@@ -14,10 +14,10 @@ jobs:
       - checkout
       - browser-tools/install-browser-tools
       - run: npm install
-      - run:
-        node --version
-        java --version
-        google-chrome --version
+      - run: |
+          node --version
+          java --version
+          google-chrome --version
 
       # run tests!
       - run: npm test
