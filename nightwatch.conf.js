@@ -1,6 +1,5 @@
 module.exports = {
     src_folders: ['e2e'],
-    page_objects_path: [ "pages" ],
     test_settings: {
       default: {
         selenium_port: 4444,
@@ -19,7 +18,6 @@ module.exports = {
         selenium : {
           start_process : true,
           server_path: require("selenium-server").path,
-          check_process_delay: 5000
         }
       },
       selenium: {
