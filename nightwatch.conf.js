@@ -17,7 +17,7 @@ module.exports = {
         },
         selenium : {
           start_process : true,
-          server_path: require("selenium-server").path,
+          server_path: require("selenium-server").path
         }
       },
       selenium: {
