@@ -1,10 +1,10 @@
 version: 2.1
 orbs:
-  browser-tools: circleci/browser-tools@1.1.1
+  browser-tools: circleci/browser-tools@1.2.4
 jobs:
   build:
     docker:
-      - image: 'cimg/node:15.0.1-browsers'
+      - image: 'cimg/node:13.12-browsers'
         auth:
           username: $DOCKERHUB_USER
           password: $DOCKERHUB_PASSWORD
