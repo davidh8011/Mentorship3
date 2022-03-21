@@ -1,28 +1,34 @@
-22:56:37.228 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-22:56:37.278 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2022-03-18 22:56:37.315:INFO::main: Logging initialized @243ms to org.seleniumhq.jetty9.util.log.StdErrLog
-22:56:37.500 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-22:56:37.549 ERROR [BaseServer.start] - Port 4444 is busy, please choose a free port and specify it using -port option
-Exception in thread "main" java.lang.RuntimeException: java.net.BindException: Address already in use
-	at org.openqa.selenium.grid.server.BaseServer.start(BaseServer.java:221)
-	at org.openqa.selenium.remote.server.SeleniumServer.boot(SeleniumServer.java:131)
-	at org.openqa.grid.selenium.GridLauncherV3.lambda$buildLaunchers$3(GridLauncherV3.java:249)
-	at org.openqa.grid.selenium.GridLauncherV3.lambda$launch$0(GridLauncherV3.java:86)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.openqa.grid.selenium.GridLauncherV3.launch(GridLauncherV3.java:86)
-	at org.openqa.grid.selenium.GridLauncherV3.main(GridLauncherV3.java:70)
-Caused by: java.net.BindException: Address already in use
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:555)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.seleniumhq.jetty9.server.ServerConnector.openAcceptChannel(ServerConnector.java:339)
-	at org.seleniumhq.jetty9.server.ServerConnector.open(ServerConnector.java:307)
-	at org.seleniumhq.jetty9.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
-	at org.seleniumhq.jetty9.server.ServerConnector.doStart(ServerConnector.java:235)
-	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-	at org.seleniumhq.jetty9.server.Server.doStart(Server.java:395)
-	at org.seleniumhq.jetty9.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
-	at org.openqa.selenium.grid.server.BaseServer.start(BaseServer.java:202)
-	... 6 more
+16:21:54.047 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+16:21:54.144 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2022-03-21 16:21:54.234:INFO::main: Logging initialized @617ms to org.seleniumhq.jetty9.util.log.StdErrLog
+16:21:54.520 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+16:21:54.635 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+16:21:56.826 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "firefox",
+  "name": "Login"
+}
+16:21:56.828 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1647897717443	geckodriver	INFO	Listening on 127.0.0.1:2085
+1647897720783	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/kk/z3d5yhrj1gb7qpd5v8_fkf480000gp/T/rust_mozprofilenKJCqk"
+1647897721578	Marionette	INFO	Marionette enabled
+2022-03-21 16:22:02.592 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSButton: 0x12b2e4c00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.593 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSButton: 0x12b4dec00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.593 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSButton: 0x12b4de000>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.594 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSButton: 0x12b4dfc00>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.595 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSButton: 0x12b4e2800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.595 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x12b4e1400>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+2022-03-21 16:22:02.596 firefox-bin[15135:356144] Warning: Expected min height of view: (<NSPopoverTouchBarItemButton: 0x11bf59800>) to be less than or equal to 30 but got a height of 32.000000. This error will be logged once per view in violation.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/kk/z3d5yhrj1gb7qpd5v8_fkf480000gp/T/rust_mozprofilenKJCqk/search.json.mozlz4", (void 0)))
+console.error: BackgroundUpdate: 
+  _reasonsToNotScheduleUpdates: Failed to check for Maintenance Service Registry Key: [Exception... "Component returned failure code: 0x80004001 (NS_ERROR_NOT_IMPLEMENTED) [nsIUpdateProcessor.getServiceRegKeyExists]"  nsresult: "0x80004001 (NS_ERROR_NOT_IMPLEMENTED)"  location: "JS frame :: resource://gre/modules/BackgroundUpdate.jsm :: _reasonsToNotScheduleUpdates :: line 241"  data: no]
+1647897724238	Marionette	INFO	Listening on port 58678
+16:22:04.376 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+16:22:04.413 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 565a90d0-9f9f-42f8-934f-ff574a3a39d6 (org.openqa.selenium.firefox.GeckoDriverService)
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.saucedemo.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1647897727368	Marionette	INFO	Stopped listening on port 58678
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+16:22:08.052 INFO [ActiveSessions$1.onStop] - Removing session 565a90d0-9f9f-42f8-934f-ff574a3a39d6 (org.openqa.selenium.firefox.GeckoDriverService)
