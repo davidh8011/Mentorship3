@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: 'cimg/node:13.12-browsers'
+      - image: cimg/node:16.14.0-browsers
         auth:
           username: $DOCKERHUB_USER
           password: $DOCKERHUB_PASSWORD
@@ -13,8 +13,11 @@ jobs:
     steps:
       - checkout
       - browser-tools/install-browser-tools
-
       - run: npm install
+      - run:
+        node --version
+        java --version
+        google-chrome --version
 
       # run tests!
       - run: npm test
