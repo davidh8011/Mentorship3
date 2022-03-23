@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/node:16.14.0-browsers
+      - image: cimg/base:2021.04
         auth:
           username: $DOCKERHUB_USER
           password: $DOCKERHUB_PASSWORD
@@ -14,10 +14,10 @@ jobs:
       - checkout
       - browser-tools/install-browser-tools
       - run: npm install
-      - run:
-        node --version
-        java --version
-        google-chrome --version
+      - run: |
+          node --version
+          java --version
+          google-chrome --version
 
       # run tests!
       - run: npm test
